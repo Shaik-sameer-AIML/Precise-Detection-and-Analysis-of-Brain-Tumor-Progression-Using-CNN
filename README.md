@@ -36,6 +36,7 @@ This research focuses on using Convolutional Neural Networks (CNNs) to accuratel
  pandas, matplotlib, seaborn, keras, tensorflow, scikit-learn.
 
 ## Architecture Diagram/Flow
+![ar](https://github.com/user-attachments/assets/bab9bc98-0943-447e-8557-1b879c828abc)
 
 ## Installation
 
@@ -450,17 +451,28 @@ plt.show()
 
 ## Output:
 ###  Retinopathy Sample in Batch
+![image](https://github.com/user-attachments/assets/8b7aca81-31cf-49f1-b5c7-97880bf51285)
 
-### Predicted Values
+
+### ROC
+![image](https://github.com/user-attachments/assets/eded5d56-7baf-44a0-8b9b-40313e3b9cdb)
+
+
 
 
 ### Loss and Accuracy
+![image](https://github.com/user-attachments/assets/1c4a8855-f47d-4e9c-95b0-de7da9800ccb)
+
 
 ### Confusion Matrix
+![image](https://github.com/user-attachments/assets/1f1b9692-deb2-4c64-b622-b2b22d2b61fd)
+
 
 ### Retinopathy Probability of a Random  images Test Data
 
 ### Predicted Output
+![image](https://github.com/user-attachments/assets/9cfc1dc2-0de0-4b13-bce3-0a2a4646453c)
+
 
 
 ## Result:
