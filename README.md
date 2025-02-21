@@ -1,4 +1,4 @@
-# FUNDUS-BASED-RETINOPATHY-USING-RCNN
+# Precise Detection and Analysis of Brain Tumor Progression Using CNN
 This research focuses on using Convolutional Neural Networks (CNNs) to accurately detect and classify brain tumor progression from MRI scans. The framework enhances diagnostic reliability through deep learning, transfer learning, and attention mechanisms. It outperforms traditional methods in accuracy, sensitivity, and specificity, aiding radiologists in precise tumor assessment. The dataset includes high-quality CT and MRI scans with labeled tumor types, supporting AI-based brain tumor detection and segmentation research.
 
 
@@ -64,7 +64,7 @@ This research focuses on using Convolutional Neural Networks (CNNs) to accuratel
 
 3. After uploading the dataset in the Google Drive, Mount Drive with the Google Colab repository.
 
-4. Execute the Fundus Disease Detection script in the Colab notebook, which may involve adapting the script to run within a notebook environment.
+4. Execute the  Disease Detection script in the Colab notebook, which may involve adapting the script to run within a notebook environment.
 
 5. Make sure that the Retinopathy Disease Prediction script runs within the Colab notebook environment and required packages are installed in the Colab environment using the following commands.
     ```
@@ -75,7 +75,7 @@ This research focuses on using Convolutional Neural Networks (CNNs) to accuratel
 
 7. Include visualizations, such as predicted classes or probability scores, to enhance result interpretation.
 
-8. Repeat the process by providing new inputs, changing the optimizer, Ephocs and with different Fundus images.
+8. Repeat the process by providing new inputs, changing the optimizer, Ephocs and with different  images.
 
 ### Mathematical Equations
 #### 1. Accuracy:
@@ -449,7 +449,7 @@ plt.show()
 
 
 ## Output:
-### Fundus Retinopathy Sample in Batch
+###  Retinopathy Sample in Batch
 
 ### Predicted Values
 
@@ -458,7 +458,7 @@ plt.show()
 
 ### Confusion Matrix
 
-### Retinopathy Probability of a Random Fundus images Test Data
+### Retinopathy Probability of a Random  images Test Data
 
 ### Predicted Output
 
