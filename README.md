@@ -1,119 +1,474 @@
-## Precise Detection and Analysis of Brain Tumor Progression Using CNN
+# FUNDUS-BASED-RETINOPATHY-USING-RCNN
 This research focuses on using Convolutional Neural Networks (CNNs) to accurately detect and classify brain tumor progression from MRI scans. The framework enhances diagnostic reliability through deep learning, transfer learning, and attention mechanisms. It outperforms traditional methods in accuracy, sensitivity, and specificity, aiding radiologists in precise tumor assessment. The dataset includes high-quality CT and MRI scans with labeled tumor types, supporting AI-based brain tumor detection and segmentation research.
-## About
-<!--Detailed Description about the project-->
-Brain tumor progression assessments play a crucial role in medical decision-making, directly influencing treatment selection and patient outcomes. Due to the complexity and varying aggressiveness of brain tumors, accurate early-stage evaluation is essential for effective intervention planning, ultimately improving survival rates. Traditional diagnostic approaches, which rely on manual analysis of medical imaging, face significant limitations such as time consumption and observer variability. To overcome these challenges, deep learning techniques, particularly Convolutional Neural Networks (CNNs), have emerged as powerful tools for enhancing brain tumor detection and classification.
 
-Role of CNNs in Brain Tumor Diagnosis
-CNN-based deep learning models offer advanced capabilities to analyze MRI scans, extracting detailed spatial and structural information about tumor progression. By leveraging CNNs, the research introduces an automated diagnostic framework that enhances accuracy, reliability, and efficiency in tumor classification. The model processes MRI images to determine tumor location, size, and shape characteristics, providing clinicians with precise diagnostic insights. Unlike traditional machine learning models, CNNs are capable of learning complex spatial hierarchies in images, making them highly suitable for medical imaging applications.
 
-Advantages of CNN-Based Tumor Detection
-The CNN-based framework in this research integrates multiple evaluation layers that systematically analyze imaging data, ensuring high diagnostic precision. Key enhancements in the model include:
+## Featuresf the CNN-Based Brain Tumor Diagnostic System  
 
-Data Augmentation – Increases dataset variability, reducing overfitting and improving model robustness.
-Transfer Learning – Utilizes pre-trained deep learning models to enhance feature extraction and improve classification accuracy, even with limited datasets.
-Attention Mechanisms – Focuses on relevant image regions, improving sensitivity in detecting tumors of varying sizes and intensities.
-Automated Feature Extraction – Eliminates manual feature engineering, providing a scalable and reproducible diagnostic tool.
-Medical Imaging and Tumor Detection
-Medical imaging, especially MRI, serves as the foundation for brain tumor diagnosis and classification. MRI technology provides high-resolution soft tissue contrast, enabling precise visualization of tumor boundaries, structure, and growth patterns. However, traditional MRI-based tumor detection often relies on manual interpretation by radiologists, which is prone to human error and subjectivity. The proposed CNN-based system addresses these limitations by offering automated tumor segmentation and classification, reducing inter-observer discrepancies and enhancing diagnostic consistency.
 
-Dataset and Image Processing
-The dataset used in this research consists of high-quality CT and MRI scans, contributed by multiple patients with various tumor types. Each image is labeled with corresponding tumor classifications, such as glioma, meningioma, and pituitary tumors, along with tumor region annotations. Combining CT and MRI imaging in tumor analysis provides a dual advantage:
+- This research included 1000 identical Magnetic Resonance Images, collected from multiple sources.
+    - glioma Tumor
+    - Putuitary Tumor
+    - Moningioma Tumor
+    - No Tumor
 
-CT scans offer excellent visualization of bone structures, aiding in anatomical reference.
-MRI scans deliver detailed soft tissue contrast, essential for tumor characterization.
-This dataset supports the development of AI-driven diagnostic models by providing diverse tumor representations across multiple imaging modalities.
-
-Evaluation and Performance Metrics
-The proposed system is rigorously validated using multiple performance metrics, ensuring its effectiveness in clinical applications. The evaluation includes:
-
-Accuracy Score – Measures the overall correctness of tumor classification.
-ROC-AUC Score – Assesses the model's ability to differentiate between tumor and non-tumor cases.
-F1-Score and Precision – Evaluate classification performance, ensuring minimal false positives and false negatives.
-Comparative analysis confirms that the CNN-based system outperforms traditional machine learning approaches, demonstrating superior sensitivity, specificity, and classification accuracy in detecting progressive brain tumors.
-
-Impact on Medical AI Development and Clinical Applications
-The research not only enhances current diagnostic capabilities but also serves as a developmental tool for AI-driven healthcare innovations. By providing an automated framework for tumor detection and segmentation, the study assists in:
-
-Medical AI Software Development – Enabling researchers and developers to create advanced diagnostic tools for real-world applications.
-Personalized Treatment Planning – Supporting radiologists and oncologists in formulating targeted therapy strategies.
-Improved Healthcare Outcomes – Enhancing diagnostic efficiency, reducing errors, and improving overall patient care quality.
-## Features
-<!--List the features of the project as shown below-->
-The proposed system integrates deep learning, transfer learning, and attention mechanisms to enhance brain tumor detection and classification. Below are the key features that make this framework effective:
-
-1. Automated Tumor Detection & Classification
-CNN-based model automatically processes MRI scans to detect and classify brain tumors with high precision.
-Multi-class classification differentiates between various tumor types, such as glioma, meningioma, and pituitary tumors.
-2. Deep Learning-Based Feature Extraction
-The CNN model extracts complex spatial and structural features from MRI images without requiring manual feature engineering.
-Multi-layer processing ensures comprehensive analysis of tumor size, shape, and position.
-3. Data Augmentation for Improved Generalization
-Augmentation techniques such as rotation, flipping, and contrast enhancement increase dataset variability.
-Reduces overfitting and improves model robustness, especially in small medical datasets.
-4. Transfer Learning for Performance Enhancement
-Utilizes pre-trained deep learning models (e.g., VGG16, ResNet, EfficientNet) to improve feature extraction.
-Enhances accuracy and efficiency, reducing the need for large labeled datasets.
-5. Attention Mechanisms for Focused Analysis
-Attention layers prioritize tumor-affected regions in MRI scans.
-Increases model sensitivity to subtle tumor features while reducing misclassification.
-6. Multi-Modal Imaging Integration (CT & MRI)
-Combines CT and MRI scans for comprehensive brain tumor analysis.
-CT imaging provides bone structure visualization, while MRI highlights soft tissue details.
-7. High-Accuracy Evaluation Metrics
-Model performance is assessed using multiple evaluation metrics:
-Accuracy – Measures overall correctness.
-ROC-AUC Score – Evaluates classification confidence.
-Precision & F1-Score – Ensures balanced performance with minimal false positives/negatives.
-8. Clinical Validation and Reliability
-Tested with real-world medical imaging data, confirming its clinical applicability.
-Outperforms traditional machine learning models in sensitivity and specificity.
-9. Faster and Consistent Diagnoses
-Reduces diagnostic time compared to manual assessment.
-Eliminates observer variability by providing consistent, automated results.
-10. AI-Powered Decision Support for Radiologists
-Assists radiologists and oncologists in early tumor detection and treatment planning.
-Supports personalized therapy strategies by providing precise tumor assessment.
+1. **Automated Tumor Detection and Classification**  
+2. **Integration of Deep Learning and CNNs**  
+3. **Enhanced Diagnostic Accuracy and Precision**  
+4. **Data Augmentation for Improved Model Generalization**  
+5. **Transfer Learning for Efficient Feature Extraction**  
+6. **Attention Mechanisms for Focused Analysis**  
+7. **MRI and CT Scan Integration for Comprehensive Assessment**  
+8. **Automated Feature Extraction Eliminating Manual Processing**  
+9. **Robust Performance Evaluation Using Multiple Metrics**  
+10. **Support for AI-Based Medical Imaging Research**  
+11. **Personalized Treatment Planning Assistance**  
+12. **Reduction of Human Error and Observer Variability**  
+13. **High-Speed Image Processing for Rapid Diagnosis**  
+14. **Scalability and Adaptability for Various Tumor Types**  
+15. **Contribution to Medical AI Software Development**  
 
 ## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
 
-## System Architecture
-<!--Embed the system architecture diagram as shown below-->
+- Python 
+- GPU (check availability and utilizes it if present)
+- Environment with the specified Python libraries (Jupyter Notebooks, Google Colab)
+- Required Python packages: 
+ pandas, matplotlib, seaborn, keras, tensorflow, scikit-learn.
 
-![Screenshot 2023-![ar](https://github.com/user-attachments/assets/da550bd3-32e3-4e03-8e77-e5325456f2e5)
+## Architecture Diagram/Flow
+
+## Installation
+
+1. Install the required python libraries:
+2. 
+   ```shell
+   !pip install pandas numpy matplotlib seaborn tensorflow scikit-learn
+3. Install the required packages:
+
+   ```shell
+   pip install keras
+4. If you face any issues related to GPU support or TensorFlow installation, you might need to install specific versions or configure GPU drivers.
+
+## Usage
+
+1. Navigate to Google Colab and Create a new notebook.
+   ```shell
+   https://colab.research.google.com/
+   ```
+
+2. Upload the dataset of four classes to Google drive .
+    ```
+    from google.colab import drive
+    drive.mount('/content/drive')
+    ```
+
+3. After uploading the dataset in the Google Drive, Mount Drive with the Google Colab repository.
+
+4. Execute the Fundus Disease Detection script in the Colab notebook, which may involve adapting the script to run within a notebook environment.
+
+5. Make sure that the Retinopathy Disease Prediction script runs within the Colab notebook environment and required packages are installed in the Colab environment using the following commands.
+    ```
+    !pip install package_name
+    ```
+
+6. Display the prediction results directly within the Colab notebook.
+
+7. Include visualizations, such as predicted classes or probability scores, to enhance result interpretation.
+
+8. Repeat the process by providing new inputs, changing the optimizer, Ephocs and with different Fundus images.
+
+### Mathematical Equations
+#### 1. Accuracy:
+The accuracy measures the overall correctness of the classification model. It is
+the ratio of correctly predicted instances to the total instances.
+
+```
+Accuracy = Number of Correct Predictions/Total Number of Predictions
+```
+
+#### 2. Precision:
+Precision is the ratio of correctly predicted positive observations to the total
+predicted positives. It is a measure of how many of the predicted positive
+instances are actually positive.
+```
+Precision = True Positives/True Positives + False Positives
+```
+
+#### 3. F1 Score:
+The F1 Score is the harmonic mean of precision and recall, providing a balance
+between the two metrics.
+```
+F1 Score = 2×(Precision×Recall/Precision + Recall)
+```
+4. Confusion Matrix:
+The confusion matrix is a table that describes the performance of a classification
+model. It contains information about true positive, true negative, false positive,
+and false negative predictions.
+~~~
+[True Negative (TN) False Positive (FP)
+False Negative (FN) True Positive (TP)]
+~~~
+5. Loss Function:
+A loss function, in the context of machine learning, quantifies the difference
+between the predicted values generated by a model and the actual ground truth,
+serving as a measure of the model's performance during training.
+~~~
+Lcross-entropy(xi) = -(yi log(f(xi))+(1-yi)log(1-f(xi)))
+~~~
+
+## Program:
+### Import packages
+Imports essential libraries for data manipulation, visualization, and deep learning using TensorFlow and Keras, while also configuring some settings for plotting.
+
+```python
+import os, glob
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from sklearn.utils import class_weight
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.applications.efficientnet import preprocess_input
+from tensorflow.keras.applications import EfficientNetB0
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
+from tensorflow.keras.optimizers import Adam
+from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc
+import tensorflow as tf
+import random
+import pandas as pd
+import cv2
+sns.set()
+```
+### Read and add all data in an array
+```python
+#I imported it locally, however, It can be done with any method preferred. 
+dataDirectory = "../data"
+
+ctHealthyPath = glob.glob(os.path.join(dataDirectory, "CT", "Healthy", "*.jpg"))
+ctTumorPath  = glob.glob(os.path.join(dataDirectory, "CT", "Tumor", "*.jpg"))
+
+mriHealthyPath = glob.glob(os.path.join(dataDirectory, "MRI", "Healthy", "*.jpg"))
+mriTumorPath  = glob.glob(os.path.join(dataDirectory, "MRI", "Tumor", "*.jpg"))
 
 
-## Output
+data = []
 
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+#CT Scan: Healthy and Tumor
+for path in ctHealthyPath:
+    data.append((path, 0, "CT"))
+for path in ctTumorPath:
+    data.append((path, 1, "CT"))
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+#MRI Scan: Healthy and Tumor
+for path in mriHealthyPath:
+    data.append((path, 0, "MRI"))
+for path in mriTumorPath :
+    data.append((path, 1, "MRI"))
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+#Checking the number of entries collected in array
+print("Number of Data entries:")
+print("CT Healthy: ", len(ctHealthyPath))
+print("CT Tumor: ", len(ctTumorPath))
+print("MRI Healthy: ", len(mriHealthyPath))
+print("MRI Tumor: ", len(mriTumorPath))
+print("Total images in Data:", len(data))
+```
+### Generate TF Dataset
+```python
+data = tf.keras.utils.image_dataset_from_directory(PATH,
+                                                batch_size = 32,
+                                                image_size=(128, 128),
+                                                shuffle=True,
+                                                seed=42,)
 
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
+class_names = data.class_names
+```
+#### spplitting into train and test
+
+```py
+df_train_val, df_test = train_test_split(
+    df,
+    test_size=0.1,
+    random_state=42,
+    stratify=df['label']
+)
+
+# further splitting into train and validation
+df_train, df_val = train_test_split(
+    df_train_val,
+    test_size=0.1,
+    random_state=42,
+    stratify=df_train_val['label'] 
+)
+
+df_train = df_train.reset_index(drop=True)
+df_val = df_val.reset_index(drop=True)
+df_test = df_test.reset_index(drop=True)
+
+# checking label distribution
+for dataset, name in zip([df_train, df_val, df_test], ['Training', 'Validation', 'Testing']):
+    print(f"\n{name} set label distribution:")
+    print(dataset['label'].value_counts(normalize=True))
+```
+##  Data Visualization
+```py
+fig, axes = plt.subplots(1, 2, figsize=(12, 4))
+
+df = pd.DataFrame(data, columns=['path', 'label', 'modality'])
+
+sns.countplot(x='label', data=df, ax=axes[0], color="#b12f1e")
+axes[0].set_title("Label Distribution")
+
+sns.countplot(x='modality', data=df, ax=axes[1], color="#7148b4")
+axes[1].set_title("Modality Distribution")
+
+plt.tight_layout()
+plt.show()
+```
+##  Displaying the MRI and CT scans: Tumor & Healthy images¶
+
+```py
+def show_random_images(df, label_filter, modality_filter, n=4):
+    subset = df[(df['label'] == label_filter) & (df['modality'] == modality_filter)]
+    n_to_show = min(n, len(subset))
+    
+    sample_rows = subset.sample(n=n_to_show, random_state=42)
+    
+    plt.figure(figsize=(12, 4))
+    for i, (_, row) in enumerate(sample_rows.iterrows(), start=1):
+        img_path = row['path']
+        img = cv2.imread(img_path)
+    
+        plt.subplot(1, n_to_show, i)
+        plt.imshow(img)
+        
+        lbl = "Tumor" if row['label'] == 1 else "Healthy"
+        mod = row['modality']
+        plt.title(f"{lbl} ({mod})")
+        plt.axis('off')
+    
+    plt.tight_layout()
+    plt.show()
+```
+```py
+show_random_images(df, label_filter=1, modality_filter='CT', n=2)
+show_random_images(df, label_filter=0, modality_filter='CT', n=2)
+show_random_images(df, label_filter=1, modality_filter='MRI', n=2)
+show_random_images(df, label_filter=0, modality_filter='MRI', n=2)
+
+```
+## Processing data
+##   a) Preparing the data
+```py
+label_mapping = {0: 'Healthy', 1: 'Tumor'}
+
+df_train['label'] = df_train['label'].map(label_mapping)
+df_val['label'] = df_val['label'].map(label_mapping)
+df_test['label'] = df_test['label'].map(label_mapping)
+```
+```py
+IMAGE_SIZE = (224, 224)
+BATCH_SIZE = 32
+
+# Image/Data generator
+def data_generator(df, image_size):
+    for index, row in df.iterrows():
+        # Load image and resize
+        image = tf.io.read_file(row['path'])
+        image = tf.image.decode_image(image, channels=3)
+        image = tf.image.resize(image, image_size)
+        
+        # since I am using EfficientNet, I am using their preprocess_input
+        image = preprocess_input(image)
+        
+        label = 0 if row['label'] == 'Healthy' else 1
+        
+        yield image, label
+
+train_dataset = tf.data.Dataset.from_generator(
+    generator=lambda: data_generator(df_train, IMAGE_SIZE),
+    output_signature=(
+        tf.TensorSpec(shape=(224, 224, 3), dtype=tf.float32),
+        tf.TensorSpec(shape=(), dtype=tf.int32)
+    )
+).batch(BATCH_SIZE).prefetch(buffer_size=tf.data.AUTOTUNE).repeat()
+
+# validation dataset
+validation_dataset = tf.data.Dataset.from_generator(
+    generator=lambda: data_generator(df_val, IMAGE_SIZE),
+    output_signature=(
+        tf.TensorSpec(shape=(224, 224, 3), dtype=tf.float32),
+        tf.TensorSpec(shape=(), dtype=tf.int32)
+    )
+).batch(BATCH_SIZE).prefetch(buffer_size=tf.data.AUTOTUNE).repeat()
+
+# Testing Dataset
+test_dataset = tf.data.Dataset.from_generator(
+    generator=lambda: data_generator(df_test, IMAGE_SIZE),
+    output_signature=(
+        tf.TensorSpec(shape=(224, 224, 3), dtype=tf.float32),
+        tf.TensorSpec(shape=(), dtype=tf.int32)
+    )
+).batch(BATCH_SIZE).prefetch(buffer_size=tf.data.AUTOTUNE)
+```
+### b) Establishing callbacks
+
+```py
+early_stop = EarlyStopping(
+    monitor='val_loss', 
+    patience=5,                 
+    restore_best_weights=True  
+)
+
+checkpoint = ModelCheckpoint(
+    'best_model.keras', 
+    monitor='val_accuracy', 
+    save_best_only=True,     
+    verbose=1                  
+)
+
+reduce_lr = ReduceLROnPlateau(
+    monitor='val_loss',
+    factor=0.5,
+    patience=3,
+    min_lr=1e-6,
+    verbose=1
+)
+
+callbacks = [early_stop, checkpoint, reduce_lr]
+
+```
+### c) Establishing class weights¶
+
+```py
+class_weights = class_weight.compute_class_weight(
+    class_weight='balanced',
+    classes=np.unique(df_train['label']),
+    y=df_train['label']
+)
+
+class_weight_dict = {i: weight for i, weight in zip(np.unique(df_train['label']), class_weights)}
+
+class_indices = train_generator.class_indices
+class_weights_int = {index: class_weight_dict[class_name] for class_name, index in class_indices.items()}
+```
+### 4) EfficientNetB0 Model
+```py
+base_model = EfficientNetB0(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+base_model.trainable = False 
+
+x = base_model.output
+x = GlobalAveragePooling2D()(x)
+x = Dense(512, activation='relu')(x)
+x = Dropout(0.5)(x)
+predictions = Dense(1, activation='sigmoid')(x)
+
+model = Model(inputs=base_model.input, outputs=predictions)
+
+model.compile(
+    optimizer=Adam(learning_rate=1e-4),
+    loss='binary_crossentropy',
+    metrics=['accuracy']
+)
+```
+```py
+steps_per_epoch = len(df_train) // BATCH_SIZE
+validation_steps = len(df_val) // BATCH_SIZE
+
+history = model.fit(
+    train_dataset,
+    validation_data=validation_dataset,
+    steps_per_epoch=steps_per_epoch,
+    validation_steps=validation_steps,
+    epochs=3,
+    callbacks=callbacks
+)
+```
+### 4) Evaluating the Model
+
+```py
+plt.figure(figsize=(14, 6))
+
+plt.subplot(1, 2, 1)
+plt.plot(history.history['accuracy'], label='Train Accuracy', color='blue')
+plt.plot(history.history['val_accuracy'], label='Validation Accuracy', color='orange')
+plt.title('Model Accuracy')
+plt.ylabel('Accuracy')
+plt.xlabel('Epoch')
+plt.legend(loc='lower right')
+
+plt.subplot(1, 2, 2)
+plt.plot(history.history['loss'], label='Train Loss', color='blue')
+plt.plot(history.history['val_loss'], label='Validation Loss', color='orange')
+plt.title('Model Loss')
+plt.ylabel('Loss')
+plt.xlabel('Epoch')
+plt.legend(loc='upper right')
+
+plt.tight_layout()
+plt.show()
+```
+```py
+test_generator.reset()
+
+pred_probs = model.predict(test_generator)
+pred_classes = (pred_probs > 0.5).astype(int).reshape(-1)
+
+true_classes = test_generator.classes
+class_labels = list(test_generator.class_indices.keys())
+
+report = classification_report(true_classes, pred_classes, target_names=class_labels)
+print("Classification Report:\n", report)
+
+cm = confusion_matrix(true_classes, pred_classes)
+plt.figure(figsize=(6, 4))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+            xticklabels=class_labels, yticklabels=class_labels)
+plt.xlabel('Predicted')
+plt.ylabel('True')
+plt.title('Confusion Matrix')
+plt.show()
+
+fpr, tpr, thresholds = roc_curve(true_classes, pred_probs)
+roc_auc = auc(fpr, tpr)
+
+plt.figure(figsize=(8, 6))
+plt.plot(fpr, tpr, color='darkorange',
+         lw=2, label=f'ROC curve (AUC = {roc_auc:.2f})')
+plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.05])
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('Receiver Operating Characteristic (ROC)')
+plt.legend(loc="lower right")
+plt.show()
+```
 
 
-## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+## Output:
+### Fundus Retinopathy Sample in Batch
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+### Predicted Values
 
-## Articles published / References
-Here are 20 references related to brain tumor detection using deep learning and CNN-based methods:
 
+### Loss and Accuracy
+
+### Confusion Matrix
+
+### Retinopathy Probability of a Random Fundus images Test Data
+
+### Predicted Output
+
+
+## Result:
+
+
+
+
+### References
 1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods,” *EAI Endorsed Trans IoT*, vol. 10, Mar. 2024.  
 2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain,” *Data Science Insights*, vol. 2, no. 1, Feb. 2024.  
 3. Brain Tumor Detection and Classification Using Convolutional Neural Network and Deep Neural Network, *IEEE Xplore* (2025). [Link](https://ieeexplore.ieee.org/document/9132874)  
@@ -134,8 +489,4 @@ Here are 20 references related to brain tumor detection using deep learning and 
 18. Attention Mechanisms in Deep Learning for Brain Tumor Detection, *Elsevier Artificial Intelligence in Healthcare* (2024).  
 19. Hybrid CNN and Transformer-Based Brain Tumor Analysis, *Journal of Neural Engineering* (2024).  
 20. Real-Time MRI-Based Brain Tumor Segmentation with Deep Learning, *arXiv Preprint* (2024).  
-
-
-
-
 
