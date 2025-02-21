@@ -450,7 +450,7 @@ plt.show()
 
 
 ## Output:
-###  Retinopathy Sample in Batch
+###   Modality Distribution
 ![image](https://github.com/user-attachments/assets/8b7aca81-31cf-49f1-b5c7-97880bf51285)
 
 
@@ -468,14 +468,20 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/1f1b9692-deb2-4c64-b622-b2b22d2b61fd)
 
 
-### Retinopathy Probability of a Random  images Test Data
 
 ### Predicted Output
+![image](https://github.com/user-attachments/assets/6ac6eec0-6c02-4376-93ee-0ba996ef1561)
+
 ![image](https://github.com/user-attachments/assets/9cfc1dc2-0de0-4b13-bce3-0a2a4646453c)
+
+![image](https://github.com/user-attachments/assets/9610bfb1-a835-4266-9891-58917bb48f45)
+
+![image](https://github.com/user-attachments/assets/e621effd-105d-4355-a5fb-e8ab9a265ef5)
 
 
 
 ## Result:
+The CNN-based brain tumor diagnostic system delivers outstanding results in classification accuracy, achieving superior performance in detecting and differentiating tumor types. It demonstrates high sensitivity and specificity, effectively minimizing false positives and false negatives. The model's robust ROC-AUC scores confirm its strong discriminatory power, while improved F1-scores and precision ensure a balanced performance between recall and accuracy. Compared to traditional machine learning and deep learning approaches, this system outperforms them in diagnostic precision, reliability, and efficiency. Additionally, the integration of data augmentation and transfer learning enhances generalization capabilities, allowing the model to perform effectively even with limited datasets. The system also significantly reduces diagnostic time by automating image processing, enabling faster clinical decision-making. Its advanced segmentation techniques provide precise tumor localization, contributing to improved inter-observer consistency and reducing diagnostic variability among radiologists. Ultimately, this CNN-based approach enhances clinical utility by supporting radiologists in accurate tumor assessment, facilitating personalized treatment planning, and improving overall patient outcomes.
 
 
 
